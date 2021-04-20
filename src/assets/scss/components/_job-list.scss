@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
   &-left {
     border: 1px solid $gray-300;
@@ -10,8 +11,8 @@
     border-radius: 1rem;
     overflow: hidden;
     overflow-y: scroll;
-    max-height: 790px;
-    min-height: 790px;
+   height: 100%;
+   max-height: 725px;
     .nav-link {
       display: block;
       min-width: 100%;
@@ -75,13 +76,18 @@
     .job-list-detail {
       border: 1px solid $gray-300;
       border-radius: 1rem;
-      padding: 1rem;
+      padding: 1.5rem;
       font-weight: normal;
       color: $gray-300;
+      height: 100%;
       h4 {
         margin-bottom: 1rem;
         color: $gray-300;
         font-weight: bold;
+      }
+      .tab-pane{
+         
+          overflow-y: scroll;
       }
     }
     &-header {
