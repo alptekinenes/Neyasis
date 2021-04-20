@@ -16,7 +16,7 @@
 body {
   font-size: 0.875rem;
   font-weight: $font-weight-light;
-  font-family: $font-family-heebo;
+  font-family: $font-family-nunito;
   letter-spacing: 0.4px;
   line-height: 1.5rem;
   color: $body-color;
@@ -68,14 +68,14 @@ h4,
 .h2,
 .h3,
 .h4 {
-  font-family: $font-family-inter;
+  // font-family: $font-family-inter;
 }
 
 h5,
 h6,
 .h5,
 .h6 {
-  font-family: $font-family-heebo;
+  // font-family: $font-family-nunito;
 }
 
 h1,
@@ -85,7 +85,7 @@ h1,
   font-weight: $font-weight-normal;
   line-height: $h1-line-height-touch;
   letter-spacing: 0.13px;
-  text-transform: uppercase;
+  
 
   @include media-breakpoint-up(lg) {
     @include font-size($h1-font-size);
@@ -133,7 +133,7 @@ h4,
   font-weight: $font-weight-normal;
   letter-spacing: 0.05px;
   line-height: $h4-line-height-touch;
-  text-transform: uppercase;
+  
 
   @include media-breakpoint-up(lg) {
     @include font-size($h4-font-size);

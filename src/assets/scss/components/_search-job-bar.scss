@@ -1,0 +1,47 @@
+.search-job-bar {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #F7F8FA;
+  .input-group {
+    height: 55px;
+    &-text {
+      border-bottom-left-radius: 10rem;
+      border-top-left-radius: 10rem;
+      border-color: #ceced0;
+      background-color: transparent;
+    }
+    .form-control {
+      border-color: #ceced0;
+      border-bottom-right-radius: 10rem;
+      border-top-right-radius: 10rem;
+    }
+  }
+  &-search-btn {
+    border: 2px solid $primary;
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: x-large;
+    color: $primary;
+    font-weight: bold;
+    border-radius: 10rem;
+    margin-left: 2rem;
+  }
+  &-search-detail-btn {
+    color: $gray-900;
+    white-space: nowrap;
+    position: relative;
+    margin-left: 1rem;
+    padding: 0;
+    color: $gray-300;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-color: $gray-300;
+    }
+  }
+}
