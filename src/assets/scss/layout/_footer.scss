@@ -2,5 +2,10 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footer {
-    border-top: 1px solid $gray-100
+    margin-top: 4rem;
+    background-color: #626160;
+    a{
+        color: white;
+       margin-bottom: .5rem;
+    }
 }

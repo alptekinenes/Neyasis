@@ -1,3 +1,14 @@
+/* line 88, src/assets/scss/config/_variable.scss */
+.custom-scroll::-webkit-scrollbar {
+  width: .6rem;
+}
+
+/* line 97, src/assets/scss/config/_variable.scss */
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #CCD0DC;
+  border-radius: 10rem;
+}
+
 /* ----------------- Media queris
 ----------------------------------------------------------------------- */
 /*! formalize.css | MIT License | github.com/interacthings/formalize */
@@ -13736,10 +13747,17 @@ h6, .h6,
 
 /* line 4, src/assets/scss/layout/_footer.scss */
 .footer {
-  border-top: 1px solid #f7f7f7;
+  margin-top: 4rem;
+  background-color: #626160;
 }
 
-/* line 2, src/assets/scss/components/_job-list.scss */
+/* line 7, src/assets/scss/layout/_footer.scss */
+.footer a {
+  color: white;
+  margin-bottom: .5rem;
+}
+
+/* line 3, src/assets/scss/components/_job-list.scss */
 .job-list-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13753,6 +13771,23 @@ h6, .h6,
 }
 
 /* line 8, src/assets/scss/components/_job-list.scss */
+.job-list-header-result {
+  position: relative;
+  padding-left: 1rem;
+}
+
+/* line 11, src/assets/scss/components/_job-list.scss */
+.job-list-header-result::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #e0e0e0;
+}
+
+/* line 22, src/assets/scss/components/_job-list.scss */
 .job-list-left {
   border: 1px solid #767884;
   padding: 0;
@@ -13763,7 +13798,7 @@ h6, .h6,
   max-height: 725px;
 }
 
-/* line 16, src/assets/scss/components/_job-list.scss */
+/* line 30, src/assets/scss/components/_job-list.scss */
 .job-list-left .nav-link {
   display: block;
   min-width: 100%;
@@ -13776,43 +13811,43 @@ h6, .h6,
   border-bottom: 1px solid #767884;
 }
 
-/* line 26, src/assets/scss/components/_job-list.scss */
+/* line 40, src/assets/scss/components/_job-list.scss */
 .job-list-left .nav-link.active {
   outline: 0;
 }
 
-/* line 28, src/assets/scss/components/_job-list.scss */
+/* line 42, src/assets/scss/components/_job-list.scss */
 .job-list-left .nav-link.active h4, .job-list-left .nav-link.active .h4 {
   color: white;
 }
 
-/* line 31, src/assets/scss/components/_job-list.scss */
+/* line 45, src/assets/scss/components/_job-list.scss */
 .job-list-left .nav-link.active .card-title {
   color: white;
 }
 
-/* line 34, src/assets/scss/components/_job-list.scss */
+/* line 48, src/assets/scss/components/_job-list.scss */
 .job-list-left .nav-link.active .card-text {
   color: white;
 }
 
-/* line 39, src/assets/scss/components/_job-list.scss */
+/* line 53, src/assets/scss/components/_job-list.scss */
 .job-list-left h4, .job-list-left .h4 {
   color: #4460ef;
 }
 
-/* line 42, src/assets/scss/components/_job-list.scss */
+/* line 56, src/assets/scss/components/_job-list.scss */
 .job-list-left .card-title {
   color: #767884;
   margin-top: 0.5rem;
 }
 
-/* line 46, src/assets/scss/components/_job-list.scss */
+/* line 60, src/assets/scss/components/_job-list.scss */
 .job-list-left .card-text {
   color: #767884;
 }
 
-/* line 52, src/assets/scss/components/_job-list.scss */
+/* line 66, src/assets/scss/components/_job-list.scss */
 .job-list-right-content .nav-link {
   color: #767884;
   font-weight: bold;
@@ -13820,13 +13855,13 @@ h6, .h6,
   position: relative;
 }
 
-/* line 58, src/assets/scss/components/_job-list.scss */
+/* line 72, src/assets/scss/components/_job-list.scss */
 .job-list-right-content .nav-link.active {
   background-color: transparent;
   color: #4460ef;
 }
 
-/* line 62, src/assets/scss/components/_job-list.scss */
+/* line 76, src/assets/scss/components/_job-list.scss */
 .job-list-right-content .nav-link.active::after {
   content: "";
   position: absolute;
@@ -13839,7 +13874,7 @@ h6, .h6,
   background-color: #4460ef;
 }
 
-/* line 76, src/assets/scss/components/_job-list.scss */
+/* line 90, src/assets/scss/components/_job-list.scss */
 .job-list-right .job-list-detail, .job-list-right .job-list-right-header {
   border: 1px solid #767884;
   border-radius: 1rem;
@@ -13849,14 +13884,14 @@ h6, .h6,
   height: 100%;
 }
 
-/* line 83, src/assets/scss/components/_job-list.scss */
+/* line 97, src/assets/scss/components/_job-list.scss */
 .job-list-right .job-list-detail h4, .job-list-right .job-list-right-header h4, .job-list-right .job-list-detail .h4, .job-list-right .job-list-right-header .h4 {
   margin-bottom: 1rem;
   color: #767884;
   font-weight: bold;
 }
 
-/* line 88, src/assets/scss/components/_job-list.scss */
+/* line 102, src/assets/scss/components/_job-list.scss */
 .job-list-right .job-list-detail .tab-pane, .job-list-right .job-list-right-header .tab-pane {
   overflow-y: scroll;
 }

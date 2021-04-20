@@ -1,9 +1,23 @@
 .job-list {
+   
   &-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     
+    &-result{
+        position: relative;
+        padding-left: 1rem;
+       &::after{
+           content: "";
+           position: absolute;
+           left: 0px;
+           top: 0;
+           height: 100%;
+           width: 2px;
+           background-color: #e0e0e0;
+       }
+    }
   }
   &-left {
     border: 1px solid $gray-300;

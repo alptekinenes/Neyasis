@@ -84,3 +84,19 @@ $container-max-widths: (
   xl: 1150px,
   xxl: 1310px,
 );
+.custom-scroll{
+  &::-webkit-scrollbar {
+    width: .6rem;
+    
+  }
+   
+  &::-webkit-scrollbar-track {
+    
+  }
+   
+  &::-webkit-scrollbar-thumb {
+    background-color: #CCD0DC;
+    
+      border-radius: 10rem;
+  }
+}
