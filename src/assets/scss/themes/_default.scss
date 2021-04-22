@@ -2,3 +2,32 @@
 // When having several themes, this file contains everything related to the
 // default one.
 // -----------------------------------------------------------------------------
+
+.edit-profile-photo{
+    position: absolute;
+    left: 0;
+    top: 0;
+   
+    
+    padding: .5rem;
+    color: white;
+   i{
+      position: absolute;
+      z-index: 1;
+      font-size: 1.2rem;
+      margin-left: .5rem;
+      margin-top: 0.5rem;
+   }
+    &::after{
+        content: "";
+        position: absolute;
+       
+        width: 120px;
+        height: 70px;
+        left: -3rem;
+        top: -.3rem;
+        transform: rotate(-20deg);
+        border-radius:50px;
+        background: $primary;
+    }
+}

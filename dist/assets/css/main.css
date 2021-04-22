@@ -13741,6 +13741,12 @@ h6, .h6,
   margin-bottom: .5rem;
 }
 
+/* line 2, src/assets/scss/components/_form-group.scss */
+.form-group input, .form-group select, .form-group .btn {
+  border-radius: 10em;
+  margin-bottom: 1.5rem;
+}
+
 /* line 2, src/assets/scss/components/_job-list.scss */
 .job-list-result {
   border-bottom: 1px solid #e6e6e6;
@@ -13961,6 +13967,38 @@ h6, .h6,
   left: 0;
   bottom: 0;
   background-color: #767884;
+}
+
+/* line 6, src/assets/scss/themes/_default.scss */
+.edit-profile-photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: .5rem;
+  color: white;
+}
+
+/* line 14, src/assets/scss/themes/_default.scss */
+.edit-profile-photo i {
+  position: absolute;
+  z-index: 1;
+  font-size: 1.2rem;
+  margin-left: .5rem;
+  margin-top: 0.5rem;
+}
+
+/* line 21, src/assets/scss/themes/_default.scss */
+.edit-profile-photo::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 70px;
+  left: -3rem;
+  top: -.3rem;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  border-radius: 50px;
+  background: #4460ef;
 }
 
 /*# sourceMappingURL=../../../scss */
