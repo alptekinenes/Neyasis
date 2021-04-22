@@ -14,68 +14,72 @@
     <!-- <link rel="stylesheet" href="assets/fonts/remixicon.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger ">
-        <!-- fixed-top js-header -->
-        <a class="navbar-brand font-weight-bolder mr-3" href="index.html">
-            <img src="assets/img/neyasis-technology.png" alt="Company Logo">
-
-        </a>
-
-        <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-default" aria-controls="navbars-default" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbars-default">
-            <ul class="navbar-nav ml-auto align-items-center">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">İşveren Girişi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">CV Yükle</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Giriş Yap</a>
-                </li>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Türkçe
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
-                        <a class="dropdown-item" href="#">EN</a>
-
-                        <h6 class="dropdown-header">Language Selection</h6>
-                        <a class="dropdown-item" href="#">RU</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">After divider action</a>
-                    </div>
+    <div class="container-fluid bg-primary">
+        <div class="container p-0">
+           <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+        
+                <a class="navbar-brand font-weight-bolder mr-3" href="index.html">
+                    <img src="assets/img/neyasis-technology.png" alt="Company Logo">
+                </a>
+                <a class="btn btn-link w-auto text-white" href="index.html">İşveren Girişi</a>
+                <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-default"
+                    aria-controls="navbars-default" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-default">
+                    <ul class="navbar-nav ml-auto align-items-center">
+            
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">CV Yükle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giriş Yap</a>
+                        </li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Türkçe
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                                <a class="dropdown-item" href="#">EN</a>
+                                <h6 class="dropdown-header">Language Selection</h6>
+                                <a class="dropdown-item" href="#">RU</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">After divider action</a>
+                            </div>
+                        </div>
+                    </ul>
                 </div>
-            </ul>
-        </div>
-    </nav>
+            </nav>
+           </div>
+        </div>    </div>
     <main role="main">
-
+        
         <div class="container-fluid search-job-bar">
             <div class="container ">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="input-group ">
                         <span class="input-group-text" id="basic-addon1"> <i class="fas fa-search mr-2"></i> İş Ara</span>
-                        <input type="text" class="form-control" placeholder="İş, Şirket, Anahtar Kelime" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" placeholder="İş, Şirket, Anahtar Kelime" aria-label="Username"
+                            aria-describedby="basic-addon1">
                     </div>
                     <a name="" id="" class="btn btn-outline-primary search-job-bar-search-btn" href="#" role="button">ARA</a>
                     <a name="" id="" class="btn btn-default search-job-bar-search-detail-btn " href="#" role="button">Detaylı Arama</a>
                 </div>
             </div>
-        </div>
-        <div class="container job-list">
+        </div>        <div class="container job-list">
             <div class="row">
                 <div class="job-list-header  border-bottom pb-5 pt-5 ">
                     <div class="d-flex align-items-center">
                         <div class="dropdown ">
-                            <button class="btn dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-filter"></i>
                                 Filtrele
                             </button>
@@ -89,7 +93,8 @@
                             </div>
                         </div>
                         <div class="dropdown ml-md-1">
-                            <button class="btn dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-history" aria-hidden="true"></i>
                                 Son Aramalar
                             </button>
@@ -103,81 +108,101 @@
                             </div>
                         </div>
                         <span class="job-list-header-result ml-md-2 text-primary font-weight-bold">
-
+                            
                             .net Developer Jobs (312 Jobs Found)
                         </span>
                     </div>
-
+                   
                     <a name="" id="" class="btn btn-outline-primary  rounded-pill py-3 px-4 font-weight-bold" href="#" role="button">Beni Bilgilendir</a>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-md-4 job-list-left custom-scroll">
                     <div class="nav  nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">
                             <div class="job-list-item">
                                 <h4 class="mb-0 font-weight-bold">.net Developer</h4>
                                 <p class="card-title">IBM</p>
                                 <p class="card-text">İstanbul (Avrupa)</p>
                             </div>
                         </button>
-                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">
                             <div class="job-list-item">
                                 <h4 class="mb-0 font-weight-bold">.net-developer</h4>
                                 <p class="card-title">IBM</p>
                                 <p class="card-text">İstanbul (Avrupa)</p>
                             </div>
                         </button>
-                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                            aria-selected="false">
                             <div class="job-list-item">
                                 <h4 class="mb-0 font-weight-bold">.net-developer</h4>
                                 <p class="card-title">Quicken Loans</p>
                                 <p class="card-text">İstanbul (Avrupa)</p>
                             </div>
                         </button>
-                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
                             <div class="job-list-item">
                                 <h4 class="mb-0 font-weight-bold">.net-developer</h4>
                                 <p class="card-title">Quicken Loans</p>
                                 <p class="card-text">İstanbul (Avrupa)</p>
                             </div>
                         </button>
-                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
                             <div class="job-list-item">
                                 <h4 class="mb-0 font-weight-bold">.net-developer</h4>
                                 <p class="card-title">Quicken Loans</p>
                                 <p class="card-text">İstanbul (Avrupa)</p>
                             </div>
                         </button>
-                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
                             <div class="job-list-item">
                                 <h4 class="mb-0 font-weight-bold">.net-developer</h4>
                                 <p class="card-title">Quicken Loans</p>
                                 <p class="card-text">İstanbul (Avrupa)</p>
                             </div>
                         </button>
-                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
                             <div class="job-list-item">
                                 <h4 class="mb-0 font-weight-bold">.net-developer</h4>
                                 <p class="card-title">Quicken Loans</p>
                                 <p class="card-text">İstanbul (Avrupa)</p>
                             </div>
                         </button>
-                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
                             <div class="job-list-item">
                                 <h4 class="mb-0 font-weight-bold">.net-developer</h4>
                                 <p class="card-title">Quicken Loans</p>
                                 <p class="card-text">İstanbul (Avrupa)</p>
                             </div>
                         </button>
-                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
                             <div class="job-list-item">
                                 <h4 class="mb-0 font-weight-bold">.net-developer</h4>
                                 <p class="card-title">Quicken Loans</p>
                                 <p class="card-text">İstanbul (Avrupa)</p>
                             </div>
                         </button>
-                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
                             <div class="job-list-item">
                                 <h4 class="mb-0 font-weight-bold">.net-developer</h4>
                                 <p class="card-title">Quicken Loans</p>
@@ -188,13 +213,16 @@
                 </div>
                 <div class="col-md-8 job-list-right">
                     <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
                             <div class="job-list-content">
                                 <div class="job-list-right-header">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h4 class="card-title text-primary font-weight-bold">Mid. Level .Net Developer
                                         </h4>
-                                        <a name="" id="" class="btn btn-outline-primary pl-4 pr-4 position-relative font-weight-bold rounded-pill" href="#" role="button">
+                                        <a name="" id=""
+                                            class="btn btn-outline-primary pl-4 pr-4 position-relative font-weight-bold rounded-pill"
+                                            href="#" role="button">
                                             Başvur
                                         </a>
                                     </div>
@@ -213,19 +241,23 @@
                                 <div class="job-list-right-content">
                                     <ul class="nav nav-pills nav-fill" id="#my-tab">
                                         <li class="nav-item">
-                                            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Detay</a>
+                                            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                                type="button" role="tab" aria-controls="home" aria-selected="true">Detay</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Aday
+                                            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                                type="button" role="tab" aria-controls="profile" aria-selected="false">Aday
                                                 Kriterleri</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">İşe Alım
+                                            <a class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                                type="button" role="tab" aria-controls="contact" aria-selected="false">İşe Alım
                                                 Süreci</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content job-list-detail" id="myTabContent">
-                                        <div class="tab-pane custom-scroll fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="tab-pane custom-scroll fade show active" id="home" role="tabpanel"
+                                            aria-labelledby="home-tab">
                                             <p>Firmamızın Ankara Kahramankazan Saraykent Sanayi Sitesi içerisinde
                                                 görevlendirilmek üzere takım arkadaşları arıyoruz.</p>
                                             <h4>İş tanımı</h4>
@@ -352,8 +384,8 @@
                 </div>
             </div>
         </div>
-
-
+        
+        
     </main>
     <footer class="footer pt-5 pb-5 text-white">
         <div class="container">
@@ -374,10 +406,10 @@
                     <a href="">Şartlar</a>
                 </div>
             </div>
-
+    
         </div>
-
-
+    
+    
     </footer>
     <!-- build:js -->
     <script src="assets/vendor/jquery/jquery.js"></script>
@@ -386,7 +418,6 @@
     <script src="assets/js/util/autoPadding.js"></script>
     <script src="assets/js/util/crossPlatform.js"></script>
     <script src="assets/js/main.js"></script>
-    <!-- endbuild -->
-</body>
+    <!-- endbuild --></body>
 
 </html>
