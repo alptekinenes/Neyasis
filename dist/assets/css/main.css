@@ -13729,22 +13729,6 @@ h6, .h6,
   }
 }
 
-/* line 4, src/assets/scss/layout/_header.scss */
-.navbar {
-  padding: .5rem 2rem;
-}
-
-/* line 8, src/assets/scss/layout/_header.scss */
-.fixed-top {
-  border-bottom: 1px solid #f7f7f7;
-}
-
-/* line 12, src/assets/scss/layout/_header.scss */
-.nav-link,
-.dropdown-item {
-  font-weight: 700;
-}
-
 /* line 4, src/assets/scss/layout/_footer.scss */
 .footer {
   margin-top: 4rem;
@@ -13757,7 +13741,12 @@ h6, .h6,
   margin-bottom: .5rem;
 }
 
-/* line 3, src/assets/scss/components/_job-list.scss */
+/* line 2, src/assets/scss/components/_job-list.scss */
+.job-list-result {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* line 5, src/assets/scss/components/_job-list.scss */
 .job-list-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13770,13 +13759,23 @@ h6, .h6,
           align-items: center;
 }
 
-/* line 8, src/assets/scss/components/_job-list.scss */
+@media (max-width: 767px) {
+  /* line 5, src/assets/scss/components/_job-list.scss */
+  .job-list-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 12, src/assets/scss/components/_job-list.scss */
 .job-list-header-result {
   position: relative;
   padding-left: 1rem;
 }
 
-/* line 11, src/assets/scss/components/_job-list.scss */
+/* line 18, src/assets/scss/components/_job-list.scss */
 .job-list-header-result::after {
   content: "";
   position: absolute;
@@ -13787,7 +13786,14 @@ h6, .h6,
   background-color: #e0e0e0;
 }
 
-/* line 22, src/assets/scss/components/_job-list.scss */
+@media (max-width: 767px) {
+  /* line 18, src/assets/scss/components/_job-list.scss */
+  .job-list-header-result::after {
+    display: none;
+  }
+}
+
+/* line 32, src/assets/scss/components/_job-list.scss */
 .job-list-left {
   border: 1px solid #767884;
   padding: 0;
@@ -13798,7 +13804,7 @@ h6, .h6,
   max-height: 725px;
 }
 
-/* line 30, src/assets/scss/components/_job-list.scss */
+/* line 40, src/assets/scss/components/_job-list.scss */
 .job-list-left .nav-link {
   display: block;
   min-width: 100%;
@@ -13811,43 +13817,43 @@ h6, .h6,
   border-bottom: 1px solid #767884;
 }
 
-/* line 40, src/assets/scss/components/_job-list.scss */
+/* line 50, src/assets/scss/components/_job-list.scss */
 .job-list-left .nav-link.active {
   outline: 0;
 }
 
-/* line 42, src/assets/scss/components/_job-list.scss */
+/* line 52, src/assets/scss/components/_job-list.scss */
 .job-list-left .nav-link.active h4, .job-list-left .nav-link.active .h4 {
   color: white;
 }
 
-/* line 45, src/assets/scss/components/_job-list.scss */
+/* line 55, src/assets/scss/components/_job-list.scss */
 .job-list-left .nav-link.active .card-title {
   color: white;
 }
 
-/* line 48, src/assets/scss/components/_job-list.scss */
+/* line 58, src/assets/scss/components/_job-list.scss */
 .job-list-left .nav-link.active .card-text {
   color: white;
 }
 
-/* line 53, src/assets/scss/components/_job-list.scss */
+/* line 63, src/assets/scss/components/_job-list.scss */
 .job-list-left h4, .job-list-left .h4 {
   color: #4460ef;
 }
 
-/* line 56, src/assets/scss/components/_job-list.scss */
+/* line 66, src/assets/scss/components/_job-list.scss */
 .job-list-left .card-title {
   color: #767884;
   margin-top: 0.5rem;
 }
 
-/* line 60, src/assets/scss/components/_job-list.scss */
+/* line 70, src/assets/scss/components/_job-list.scss */
 .job-list-left .card-text {
   color: #767884;
 }
 
-/* line 66, src/assets/scss/components/_job-list.scss */
+/* line 76, src/assets/scss/components/_job-list.scss */
 .job-list-right-content .nav-link {
   color: #767884;
   font-weight: bold;
@@ -13855,13 +13861,13 @@ h6, .h6,
   position: relative;
 }
 
-/* line 72, src/assets/scss/components/_job-list.scss */
+/* line 82, src/assets/scss/components/_job-list.scss */
 .job-list-right-content .nav-link.active {
   background-color: transparent;
   color: #4460ef;
 }
 
-/* line 76, src/assets/scss/components/_job-list.scss */
+/* line 86, src/assets/scss/components/_job-list.scss */
 .job-list-right-content .nav-link.active::after {
   content: "";
   position: absolute;
@@ -13874,7 +13880,7 @@ h6, .h6,
   background-color: #4460ef;
 }
 
-/* line 90, src/assets/scss/components/_job-list.scss */
+/* line 100, src/assets/scss/components/_job-list.scss */
 .job-list-right .job-list-detail, .job-list-right .job-list-right-header {
   border: 1px solid #767884;
   border-radius: 1rem;
@@ -13884,14 +13890,14 @@ h6, .h6,
   height: 100%;
 }
 
-/* line 97, src/assets/scss/components/_job-list.scss */
+/* line 107, src/assets/scss/components/_job-list.scss */
 .job-list-right .job-list-detail h4, .job-list-right .job-list-right-header h4, .job-list-right .job-list-detail .h4, .job-list-right .job-list-right-header .h4 {
   margin-bottom: 1rem;
   color: #767884;
   font-weight: bold;
 }
 
-/* line 102, src/assets/scss/components/_job-list.scss */
+/* line 112, src/assets/scss/components/_job-list.scss */
 .job-list-right .job-list-detail .tab-pane, .job-list-right .job-list-right-header .tab-pane {
   overflow-y: scroll;
 }
@@ -13903,12 +13909,12 @@ h6, .h6,
   background-color: #F7F8FA;
 }
 
-/* line 5, src/assets/scss/components/_search-job-bar.scss */
+/* line 6, src/assets/scss/components/_search-job-bar.scss */
 .search-job-bar .input-group {
   height: 55px;
 }
 
-/* line 7, src/assets/scss/components/_search-job-bar.scss */
+/* line 8, src/assets/scss/components/_search-job-bar.scss */
 .search-job-bar .input-group-text {
   border-bottom-left-radius: 10rem;
   border-top-left-radius: 10rem;
@@ -13916,14 +13922,14 @@ h6, .h6,
   background-color: transparent;
 }
 
-/* line 13, src/assets/scss/components/_search-job-bar.scss */
+/* line 14, src/assets/scss/components/_search-job-bar.scss */
 .search-job-bar .input-group .form-control {
   border-color: #ceced0;
   border-bottom-right-radius: 10rem;
   border-top-right-radius: 10rem;
 }
 
-/* line 19, src/assets/scss/components/_search-job-bar.scss */
+/* line 20, src/assets/scss/components/_search-job-bar.scss */
 .search-job-bar-search-btn {
   border: 2px solid #4460ef;
   height: 100%;
@@ -13936,7 +13942,7 @@ h6, .h6,
   margin-left: 2rem;
 }
 
-/* line 30, src/assets/scss/components/_search-job-bar.scss */
+/* line 31, src/assets/scss/components/_search-job-bar.scss */
 .search-job-bar-search-detail-btn {
   color: #30302e;
   white-space: nowrap;
@@ -13946,7 +13952,7 @@ h6, .h6,
   color: #767884;
 }
 
-/* line 37, src/assets/scss/components/_search-job-bar.scss */
+/* line 38, src/assets/scss/components/_search-job-bar.scss */
 .search-job-bar-search-detail-btn::after {
   content: "";
   position: absolute;
